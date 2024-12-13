@@ -1,0 +1,68 @@
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Parent = screenGui
+imageLabel.Size = UDim2.new(0, 100, 0, 100)  -- Comienza con un tamaño pequeño
+imageLabel.Position = UDim2.new(0.5, -50, 0.5, -50)  -- Centro de la pantalla
+imageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+imageLabel.Image = "rbxassetid://15828456271"  -- ID de la imagen de Roblox
+imageLabel.BackgroundTransparency = 1  -- Transparente
+
+local blurEffect = Instance.new("BlurEffect")
+blurEffect.Parent = game.Lighting
+blurEffect.Size = 0  -- Empezamos con un blur pequeño
+
+local function animateImage()
+
+    local tweenService = game:GetService("TweenService")
+
+    local sizeTweenInfo = TweenInfo.new(7, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+    local sizeGoal = {Size = UDim2.new(0, 500, 0, 500)}
+    local sizeTween = tweenService:Create(imageLabel, sizeTweenInfo, sizeGoal)
+
+    local rotationTweenInfo = TweenInfo.new(7, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+    local rotationGoal = {Rotation = 720}  -- 720 grados (2 vueltas)
+    local rotationTween = tweenService:Create(imageLabel, rotationTweenInfo, rotationGoal)
+
+    local blurTweenInfo = TweenInfo.new(7, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut)
+    local blurGoal = {Size = 10}  -- Desenfoque de fondo
+    local blurTween = tweenService:Create(blurEffect, blurTweenInfo, blurGoal)
+
+    sizeTween:Play()
+    rotationTween:Play()
+    blurTween:Play()
+
+    sizeTween.Completed:Wait()
+
+    -- Tween para reducir el tamaño
+    local sizeShrinkGoal = {Size = UDim2.new(0, 100, 0, 100)}
+    local sizeShrinkTween = tweenService:Create(imageLabel, sizeTweenInfo, sizeShrinkGoal)
+
+    local rotationShrinkGoal = {Rotation = 1440}  -- 1440 grados (4 vueltas)
+    local rotationShrinkTween = tweenService:Create(imageLabel, rotationTweenInfo, rotationShrinkGoal)
+
+    local blurShrinkGoal = {Size = 0}
+    local blurShrinkTween = tweenService:Create(blurEffect, blurTweenInfo, blurShrinkGoal)
+
+    sizeShrinkTween:Play()
+    rotationShrinkTween:Play()
+    blurShrinkTween:Play()
+
+    sizeShrinkTween.Completed:Wait()
+
+    imageLabel:Destroy()
+end
+
+animateImage()
+
+local message = [[
+██╗███╗░░██╗░█████╗░░█████╗░░██████╗░███╗░░██╗██╗████████╗░█████╗░
+██║████╗░██║██╔══██╗██╔══██╗██╔════╝░████╗░██║██║╚══██╔══╝██╔══██╗
+██║██╔██╗██║██║░░╚═╝██║░░██║██║░░██╗░██╔██╗██║██║░░░██║░░░██║░░██║
+██║██║╚████║██║░░██╗██║░░██║██║░░╚██╗██║╚████║██║░░░██║░░░██║░░██║
+██║██║░╚███║╚█████╔╝╚█████╔╝╚██████╔╝██║░╚███║██║░░░██║░░░╚█████╔╝
+╚═╝╚═╝░░╚══╝░╚════╝░░╚════╝░░╚═════╝░╚═╝░░╚══╝╚═╝░░░╚═╝░░░░╚════╝░
+]]
+
+print(message)
