@@ -4,3 +4,10 @@
 [-] The key system was removed due to several reported errors.
 [+] A new button was added.
 [+] The Dances script was changed.
+
+[ -- 06/01/25 -- ]
+
+[-] cxapi was removed due to security concerns.
+[-] The Dances script was removed due to various issues.
+[+] ForlonApi was added as a replacement for cxapi.
+[+] The LALOLHUB script was added.
