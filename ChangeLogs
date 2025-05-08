@@ -1,79 +1,16 @@
-[ -- 31/03/25 -- ]
+# 🚀 Asena v1 - First Official Release
 
-[+] API Update
-[+] Mini Monaco Update
-[-] Bootstrapper :(
+Welcome to the very first release of **Asena**, your new favorite Roblox executor UI. Here's everything we've added in this version:
 
-[ -- 21/03/25 -- ]
+## 🆕 Changelog
 
-[+] Incognito Rework
-[+] Added Logs Console
-[+] Bootstrapper Update
-[+] API Update
-[-] All LOL
+- ✨ Added our custom **Monaco Editor** for a smooth scripting experience.  
+- 🎬 Implemented **button animations** to enhance UI interaction.  
+- 📜 Integrated a brand-new **Script Hub** with built-in scripts.  
+- 🙌 Added an **Executor Credits** section to give proper recognition.  
+- ⚙️ Introduced a full **Settings** panel for user preferences.  
+- 💬 Added a **Discord button** to quickly join our community.
 
-[ -- 28/02/25 -- ]
+---
 
-[+] Api update
-[+] Mini mocano update
-[-] Removed 1 option : ChatBypass ( Patched )
-
-[ -- 19/02/25 -- ]
-
-[+] Two new status indicators were added: one for Roblox and another for the injection.
-[+] Two new options were added:
-
-[ -- 18/02/25 -- ] 
-
-[-] Api Developer Discord And Youtube Bug
-[+] Added scripthub
-
-[ -- 17/02/25 -- ] Api Update
-
-[-] ForlonApi/Xeno
-[+] IncognitoApi/Nezur
-
-[ -- 16/02/25 -- ] Little Update
-
-[+] Bootstrapper
-
-[ -- 04/02/25 -- ] BIG UPDATE
-
-[-] Old Monaco removed
-[-] The Logs, Scripts, and Credits buttons have been removed for the new interface
-[-] Script removed: Universal Aimbot
-[-] Just like the buttons, the Scripts and Credits sales have been removed for the new interface
-[+] New, more refined interface
-[+] 4 New tabs: Home, Scripts, Credits, and Logs
-[+] New Monaco with tabs
-[+] New Scripts: sUNC and REVIZ
-[+] 4 New settings: Music, TopMost, Volume, and Opacity
-
-[ -- 04/02/25 -- ]
-
-[-] Options button was removed
-[+] Added copy button on the script window
-[+] Updated to the new roblox update
-
-[ -- 25/01/25 -- ]
-
-[-] Removed Scripts : Test And Sunctest.
-[-] Status Info.
-[+] New Ui.
-[+] 2 New Buttons.
-
-[ -- 06/01/25 -- ]
-
-[-] cxapi was removed due to security concerns.
-[-] The Dances script was removed due to various issues.
-[+] ForlonApi was added as a replacement for cxapi.
-[+] The LALOLHUB script was added.
-
-
-
-[ -- 17/12/24 -- ]
-
-[-] It has removed the image of Incognit Projects from the user interface.
-[-] The key system was removed due to several reported errors.
-[+] A new button was added.
-[+] The Dances script was changed.
+Thanks for using Asena. More updates coming soon! 💖
